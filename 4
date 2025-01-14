@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #e60073;
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        .button-container {
+            margin-top: 30px;
+        }
+        button {
+            background-color: #e60073;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #cc005c;
+        }
+        .heart {
+            font-size: 5rem;
+            color: #ff3366;
+            margin-bottom: 20px;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="heart">❤️</div>
+        <h1>Will You Be My Valentine?</h1>
+        <p>You make every day brighter. Would you make this Valentine’s Day extra special?</p>
+        <div class="button-container">
+            <button onclick="alert('Yay! You said yes! ❤️')">Yes</button>
+            <button onclick="alert('Oh no! Maybe next time. 😢')">No</button>
+        </div>
+    </div>
+</body>
+</html>
